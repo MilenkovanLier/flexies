@@ -1,0 +1,49 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if gt IE 9]><!--><html lang="<%= I18n.locale %>"><!--<![endif]-->
+  <head data-hook="inside_head">
+    <%= render partial: 'spree/shared/head' %>
+  </head>
+  <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
+
+
+      <%= render partial: 'spree/shared/header' %>
+    <div class="container">
+      <div class= "row">
+        <div class="about-flexies">
+          <h2>About Flexies</h2>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="row">
+        <div class="col-sm-6">image gloves</div>
+        <div class="col-sm-6">Top Glove Corporation Berhad is a rubber glove manufacturer. The company owns and operates 30 manufacturing facilities in Malaysia, Thailand, China and marketing offices in Malaysia, United States and Germany.</div>
+      </div>
+
+      <div id="wrapper" class="row" data-hook>
+
+        <%= taxon_breadcrumbs(@taxon) %>
+
+        <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
+        <div id="content" class="columns <%= !content_for?(:sidebar) ? "sixteen" : "twelve omega" %>" data-hook>
+          <%= flash_messages %>
+          <%= yield %>
+        </div>
+
+        <%= yield :templates %>
+
+      </div>
+
+      <%= render partial: 'spree/shared/footer' %>
+
+    </div>
+
+  </body>
+</html>
