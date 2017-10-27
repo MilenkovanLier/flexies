@@ -1,0 +1,27 @@
+<div class="container">
+  <h1 class="title">Flexies</h1>
+  <h4 class="sub-title">The number one nitril glove<h4>
+
+    <!-- include mailchimp link -->
+    <h3 class="purchase-online">Or purchase online</h3>
+    <p>Order at Dentco</p>
+
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      image
+    </div>
+  </div>
+  <div class="col-md-6">
+    <p>Top Glove Corporation Berhad is a rubber glove manufacturer. The company owns and operates 30 manufacturing facilities in Malaysia, Thailand, China and marketing offices in Malaysia, United States and Germany.</p>
+    <button>Order now</button>
+  </div>
+</div>
+
+<div data-hook="homepage_products">
+  <% cache(cache_key_for_products) do %>
+    <%= render partial: 'spree/shared/products', locals: { products: @products } %>
+  <% end %>
+</div>
