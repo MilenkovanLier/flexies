@@ -1,27 +1,53 @@
-<div class="container">
-  <h1 class="title">Flexies</h1>
-  <h4 class="sub-title">The number one nitril glove<h4>
 
-    <!-- include mailchimp link -->
-    <h3 class="purchase-online">Or purchase online</h3>
-    <p>Order at Dentco</p>
+  <div id="header" class="jumbotron">
+    <div id="header" class="row">
+      <h1 id="title" class="title">Flexies</h1>
+      <h4 id="sub-header" class="sub-title">The number one nitril glove<h4>
 
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      image
+        <!-- include mailchimp link -->
+        <h3 class="purchase-online">Or purchase online</h3>
+        <p>Order at Dentco</p>
     </div>
   </div>
-  <div class="col-md-6">
-    <p>Top Glove Corporation Berhad is a rubber glove manufacturer. The company owns and operates 30 manufacturing facilities in Malaysia, Thailand, China and marketing offices in Malaysia, United States and Germany.</p>
-    <button>Order now</button>
-  </div>
-</div>
 
-<div data-hook="homepage_products">
-  <% cache(cache_key_for_products) do %>
-    <%= render partial: 'spree/shared/products', locals: { products: @products } %>
-  <% end %>
-</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          image
+        </div>
+      </div>
+      <div class="col-md-6">
+        <p>Top Glove Corporation Berhad is a rubber glove manufacturer. The company owns and operates 30 manufacturing facilities in Malaysia, Thailand, China and marketing offices in Malaysia, United States and Germany.</p>
+        <button>Order now</button>
+      </div>
+    </div>
+
+    <div data-hook="homepage_products">
+      <% cache(cache_key_for_products) do %>
+        <%= render partial: 'spree/shared/products', locals: { products: @products } %>
+      <% end %>
+    </div>
+
+ <!-- styling -->
+ <style>
+ #header {
+   background-color: #99ffcc;
+   background-image: url('./gloves.png');
+ }
+.container-fluid{
+  padding-right:0;
+     padding-left:0;
+     margin-right:auto;
+     margin-left:auto
+   }
+
+#title {
+  color: white;
+}
+
+#sub-title {
+
+}
+
+
+ </style>

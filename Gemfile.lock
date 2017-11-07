@@ -1,3 +1,23 @@
+GIT
+  remote: https://github.com/2beDigital/solidus_bootstraps_frontend.git
+  revision: 9830e3b8b65047ceb85a9855f2ed17d792a35332
+  branch: master
+  specs:
+    solidus_auth_devise_bootstrap (0.1.0)
+      solidus_auth_devise
+      solidus_bootstrap
+    solidus_bootstrap (0.2.1)
+      bootstrap-kaminari-views (~> 0.0.5)
+      bootstrap-sass (>= 3.3.5.1)
+      sass-rails (>= 5.0)
+      solidus_core (~> 2.1)
+      solidus_frontend (~> 2.1)
+    solidus_bootstrap_frontend (0.1.1)
+      bootstrap-sass (~> 3.3, >= 3.3.7)
+      sass-rails (>= 5.0)
+      solidus_auth_devise_bootstrap
+      solidus_bootstrap
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -54,6 +74,9 @@ GEM
       activerecord (>= 4.0.0, < 5.2)
     bcrypt (3.1.11)
     bindex (0.5.0)
+    bootstrap-kaminari-views (0.0.5)
+      kaminari (>= 0.13)
+      rails (>= 3.1)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
@@ -373,6 +396,7 @@ DEPENDENCIES
   selenium-webdriver
   solidus
   solidus_auth_devise
+  solidus_bootstrap_frontend!
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)

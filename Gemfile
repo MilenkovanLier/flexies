@@ -30,9 +30,11 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem 'bootstrap-sass'
+
 gem 'solidus'
 gem 'solidus_auth_devise'
+gem 'solidus_bootstrap_frontend', git: 'https://github.com/2beDigital/solidus_bootstraps_frontend.git', branch: 'master'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
