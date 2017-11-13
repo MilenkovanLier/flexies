@@ -1,12 +1,14 @@
 
   <div id="header" class="jumbotron">
-    <div id="header" class="row">
-      <h1 id="title" class="title">Flexies</h1>
-      <h4 id="sub-header" class="sub-title">The number one nitril glove<h4>
+    <div class="container">
+      <div id="header" class="row">
+        <h1 id="title" class="title">Flexies</h1>
+        <h4 id="sub-header" class="sub-title">The number one nitril glove<h4>
 
-        <!-- include mailchimp link -->
+          <!-- include mailchimp link -->
         <h3 class="purchase-online">Or purchase online</h3>
         <p>Order at Dentco</p>
+      </div>
     </div>
   </div>
 
@@ -22,6 +24,11 @@
       </div>
     </div>
 
+    <!-- <div class="image">
+      <img src="/gloves.png" alt="hallo">
+    </div> -->
+
+
     <div data-hook="homepage_products">
       <% cache(cache_key_for_products) do %>
         <%= render partial: 'spree/shared/products', locals: { products: @products } %>
@@ -30,9 +37,9 @@
 
  <!-- styling -->
  <style>
+
  #header {
    background-color: #99ffcc;
-   background-image: url('./gloves.png');
  }
 .container-fluid{
   padding-right:0;

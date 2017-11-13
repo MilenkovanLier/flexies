@@ -35,6 +35,8 @@ gem 'solidus'
 gem 'solidus_auth_devise'
 gem 'solidus_bootstrap_frontend', git: 'https://github.com/2beDigital/solidus_bootstraps_frontend.git', branch: 'master'
 gem 'carrierwave', '0.11.2'
+gem 'cloudinary', '1.2.3'
+
 
 
 # Use Capistrano for deployment
